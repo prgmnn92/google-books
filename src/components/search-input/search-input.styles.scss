@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.search-input {
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	padding: 15px 59px;
+	height: 65px;
+	position: fixed;
+	background: $DarkColor;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 2px 5px $DarkColor;
+	box-sizing: border-box;
+
+	&__button {
+		background: $RedColor;
+		color: $LightBlueColor;
+		cursor: pointer;
+
+		border: none;
+		padding: 8px 15px;
+		margin-right: 10px;
+		border-radius: 9px;
+		transition: 0.3s;
+
+		&:hover {
+			background: #ff7452;
+			transition: 0.3s;
+			box-shadow: 1px 1px 3px #c9c9c9;
+		}
+	}
+
+	&__input {
+		width: 350px;
+		border-radius: 0px;
+		border: none;
+		padding: 6px 10px;
+		border-radius: 9px;
+		-webkit-transition: all 0.30s ease-in-out;
+		-moz-transition: all 0.30s ease-in-out;
+		-ms-transition: all 0.30s ease-in-out;
+		-o-transition: all 0.30s ease-in-out;
+		outline: none;
+		border: 1px solid #dddddd;
+		box-sizing: border-box;
+
+		&:focus {
+			box-shadow: 0 0 5px $BlueColor;
+			border: 2px solid $BlueColor;
+		}
+	}
+
+	&__menu {
+		cursor: pointer;
+		margin-left: auto;
+	}
+}

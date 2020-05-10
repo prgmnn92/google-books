@@ -1,0 +1,42 @@
+@import "../../variables";
+
+.book-list {
+	position: fixed;
+	height: calc(100% - 65px);
+	top: 65px;
+	right: 0;
+	margin-right: -100%;
+	background: $DarkColor;
+	transition: 0.3s;
+	opacity: 0;
+	width: 0;
+	overflow-y: scroll;
+	scrollbar-width: none;
+
+	box-shadow: -2px 0px 5px $DarkColor;
+
+	&:-webkit-scrollbar {
+		display: none;
+	}
+
+	&--active {
+		margin-right: 0px;
+		transition: 0.4s;
+		opacity: 1;
+		width: 200px;
+	}
+
+	.book {
+		cursor: pointer;
+		width: 75%;
+		height: 190px;
+		background: $RedColor;
+		margin: auto;
+		margin-top: 20px;
+		padding: 0;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

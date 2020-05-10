@@ -1,0 +1,67 @@
+@import "../../variables";
+
+.book-details {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	padding: 150px 200px 150px 170px;
+	transition: 0.3s;
+
+	&--full {
+		padding: 150px 170px;
+		transition: 0.3s;
+	}
+
+	.details {
+		text-align: left;
+		color: $DarkColor;
+		h1 {
+			margin: 0;
+			max-width: 80%;
+		}
+		h3 {
+			margin: 20px 0 50px 0;
+		}
+
+		h4 {
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		.button {
+			display: inline;
+			cursor: pointer;
+			background: $DarkColor;
+			color: #f1f1f1;
+			font-weight: bold;
+			padding: 9px 12px;
+			&:hover {
+				background: #3b485e;
+				box-shadow: 2px 0 5px $DarkColor;
+				transition: 0.3s;
+			}
+		}
+	}
+
+	.image {
+		img {
+			width: 270px;
+		}
+		.button {
+			margin-top: 30px;
+
+			cursor: pointer;
+			a {
+				text-decoration: none;
+				background: $DarkColor;
+				color: #f1f1f1;
+				font-weight: bold;
+				padding: 9px 12px;
+				&:hover {
+					background: #3b485e;
+					box-shadow: 2px 0 5px $DarkColor;
+					transition: 0.3s;
+				}
+			}
+		}
+	}
+}
